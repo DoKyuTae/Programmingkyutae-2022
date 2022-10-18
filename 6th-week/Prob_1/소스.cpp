@@ -4,23 +4,39 @@
 
 int main(void)
 {
-	char mypass[100] = "dokyu19";
-	char inpass[100];
-	
+	char mypass[] = "dokyu19";
+	char inpass[100] = {};
+	int i = 0;
+	char *p;
+	char *q;
+
+	p = inpass;
+	q = mypass;
+
 
 	while (1)
 	{
 		printf("input password : ");
-		scanf_s("%c", inpass);
+		scanf_s("%s", inpass, inpass[10]);
 
-		if (strcmp(mypass, inpass))
-			printf("not matched, retry..\n");
-		else
+		for(i = 0; i < 10; i++)
+		{
+			if (mypass[i] == inpass[i])
+			{
+				break;
+			}
+		}
+		if (i == 10)
 		{
 			printf("nomal termination..\n");
-			break;
+		}
+		else
+		{
+			printf("not matched, retry..\n");
 		}
 	}
+
+
 
 	return 0;
 }
