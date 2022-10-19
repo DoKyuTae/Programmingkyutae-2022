@@ -20,12 +20,12 @@ int main(void)
 	int j = 0;
 	int p = 0;
 	int k = 0;
-
+	
 	for (i = 0; i < 5; i++)
 	{
 		printf("input number, for generating the random number related to your input : ");
 		scanf_s("%d", &nRange);
-        int nRes = GenRandNum(nRange);
+		int nRes = GenRandNum(nRange);
 		printf("random number : %d\n", nRes);
 	}
 
@@ -35,12 +35,11 @@ int main(void)
 	double avg = 0;
 	double var = 0;
 	double sta = 0; 
-	double res = 0;
 
 	for (j = 0; j < 5; j++)
 	{
 		sum = sum + num[j];
-        res = (double)sum / 5;
+        avg  = (double)sum / 5;
 	}
 		
 	for (p = 0; p < 5; p++)
@@ -53,7 +52,7 @@ int main(void)
 		sta = sqrt(var);
 	}
 	
-	printf("Æò±Õ : %.2f\n", res);
+	printf("Æò±Õ : %.2f\n", avg);
 	printf("ºÐ»ê : %.2f\n", var);
 	printf("Ç¥ÁØÆíÂ÷ : %.2f\n", sta);
 
