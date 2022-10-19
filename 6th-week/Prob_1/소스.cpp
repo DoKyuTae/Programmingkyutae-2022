@@ -1,42 +1,29 @@
 #include <stdio.h>
 #include <string.h>
 
+#define PASSWORLD "dokyu19"
+#define SIZE 50
 
 int main(void)
 {
-	char mypass[] = "dokyu19";
-	char inpass[100] = {};
-	int i = 0;
-	char *p;
-	char *q;
-
-	p = inpass;
-	q = mypass;
-
+	char mypass[] = { PASSWORLD };
+	char inpass[SIZE] = { 0 };
 
 	while (1)
 	{
 		printf("input password : ");
-		scanf_s("%s", inpass, inpass[10]);
+		scanf_s("%s", inpass, SIZE);
 
-		for(i = 0; i < 10; i++)
-		{
-			if (mypass[i] == inpass[i])
+		
+		
+			if (strcmp(inpass, mypass) == 0)
 			{
+				printf("nomal termination..\n");
 				break;
 			}
-		}
-		if (i == 10)
-		{
-			printf("nomal termination..\n");
-		}
-		else
-		{
+			
 			printf("not matched, retry..\n");
-		}
 	}
-
-
 
 	return 0;
 }
