@@ -12,38 +12,33 @@ void GenRandSeed()
 	return;
 }
 
-
 int cal()
 {
 	int i = 0;
 	int j = 0;
 	int k = 0;
 	int p = 0;
-	int res = 0;
-	int a[MATRIX_A][MATRIX_B];
-	int b[MATRIX_B][MATRIX_A];
-	int c[MATRIX_B][MATRIX_B];
+	int a[MATRIX_A][MATRIX_B] = { 0 };
+	int b[MATRIX_B][MATRIX_A] = { 0 };
+	int c[MATRIX_A][MATRIX_A] = { 0 };
+
 
 	for (i = 0; i < MATRIX_A; i++)
 	{
 		for (k = 0; k < MATRIX_A; k++)
 		{
-			for (j = 0, p = 0; j < MATRIX_B; j++, k++)
+			for (j = 0; j < MATRIX_B; j++)
 			{
-				res += a[i][j] * b[p][k];
+				c[i][k] += (a[i][j] * b[j][k]);
 			}
-			
-			res = c[i][j];
-            printf("calculate matrix A and matrix B : \t%d", res);
-		
+
 		}
-
-		printf("\n");
-
 	}
-	
-	return res;
+
+	return 0;
 }
+
+
 
 int main(void)
 {
@@ -52,12 +47,12 @@ int main(void)
 	int j = 0;
 	int k = 0;
 	int p = 0;
-	int a[MATRIX_A][MATRIX_B];
-	int b[MATRIX_B][MATRIX_A];
-	int result;
+	int a[MATRIX_A][MATRIX_B] = { 0 };
+	int b[MATRIX_B][MATRIX_A] = { 0 };
+	int res = 0;
 
-	result = cal();
-	
+	res = cal();
+
 	GenRandSeed();
 	
 	printf("matrix A : \n");
@@ -87,6 +82,8 @@ int main(void)
 		printf("\n");
 	}
 	printf("");
+
+	printf("calculate matrix A and matrix B : \t%d", res);
 
 	return 0;
 }
