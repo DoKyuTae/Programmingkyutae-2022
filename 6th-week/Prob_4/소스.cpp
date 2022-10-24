@@ -66,7 +66,7 @@ int main(void)
 
 	printf("\n");
 	
-	printf("\nascending order : ");                // 내림차순 출력
+	printf("\nascending order : ");                // 오름차순 출력
 	
 	for (i = 0; i < MAX_NUM; i++)                  // MAX_NUM 까지 저장된 배열 출력
 	{
