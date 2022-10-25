@@ -32,7 +32,7 @@ int main(void)
 	{
 		for (j = 0; j < MAX_NUM - 1 - i; j++)
 		{
-			if (num[j] < num[j + 1])               // 숫자를 비교해서 큰수를 뒤로 보냄
+			if (num[j] < num[j + 1])               // 숫자를 비교해서 큰 수를 앞으로 보냄
 			{
 				res = num[j];
 				num[j] = num[j + 1];
@@ -54,7 +54,7 @@ int main(void)
 	{
 		for (j = 0; j < MAX_NUM - 1 - i; j++)
 		{
-			if (num[j] > num[j + 1])               // 숫자를 비교해서 작은수를 앞으로 보냄
+			if (num[j] > num[j + 1])               // 숫자를 비교해서 큰 수를 뒤로 보냄
 			{
 				res = num[j];
 				num[j] = num[j + 1];
