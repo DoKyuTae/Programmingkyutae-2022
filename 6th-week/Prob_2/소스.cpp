@@ -53,9 +53,9 @@ int main(void)
 		sta = sqrt(var);
 	}
 	
-	printf("평균 : %.2f\n", avg);
-	printf("분산 : %.2f\n", var);
-	printf("표준편차 : %.2f\n", sta);
+	printf("average : %.2f\n", avg);
+	printf("variance : %.2f\n", var);
+	printf("standard deviation : %.2f\n", sta);
 
 	return 0;
 }
