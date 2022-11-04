@@ -1,0 +1,11 @@
+﻿  소스.cpp
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(20,10): warning C4477: 'scanf_s' : 서식 문자열 '%lf'에 'double *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(20,10): warning C4477: 'scanf_s' : 서식 문자열 '%lf'에 'double *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(20,10): warning C4477: 'scanf_s' : 서식 문자열 '%lf'에 'double *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int *'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(38,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(38,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(38,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(39,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(39,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int'입니다.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\소스.cpp(39,9): warning C4477: 'printf' : 서식 문자열 '%lf'에 'double' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int'입니다.
+  Middle Project.vcxproj -> C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\Project-1\Middle Project\x64\Debug\Middle Project.exe
