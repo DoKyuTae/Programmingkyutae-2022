@@ -1,43 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-
-
-int main(void)
+void main(void)
 {
-	int a[2][3];
+	int m, n;
+	int equation[4][4];
+
+
+	printf("방정식을 입력하시오... \n\n");
+
+	for (m = 0; m < 2; m++)
+	{
+		for (n = 0; n < 3; n++)
+		{
+			printf("[%i][%i] : ", m + 1, n + 1);
+			scanf_s("%i", &equation[m][n]);
+		}
+		printf("\n");
+	}
+
+	printf("입력한 방정식은\n\n");
+
+	for (m = 0; m < 2; m++)
+	{
+		printf(" %ix + %iy = %i\n", equation[m][0], equation[m][1], equation[m][2]);
+	}
+
 	double xres = 0;
 	double yres = 0;
 
-	printf("Simultaneous Equation....\n");
-	printf("ax + by = c\n");
-	printf("input number to a, b, c : \n");
-	scanf_s("%d %d %d\n", &a[0][0], &a[0][1], &a[0][2]);
-	
-	printf("dx + ey = f\n");
-	printf("input number to a, b, c : \n");
-	scanf_s("%d %d %d\n", &a[1][0], &a[1][1], &a[1][2]);
+	xres = ((double)equation[0][2] * (double)equation[1][1] - (double)equation[1][2] * (double)equation[0][1]) / ((double)equation[0][0] * (double)equation[1][1] - (double)equation[1][0] * (double)equation[0][1]);
+	yres = ((double)equation[0][0] * (double)equation[1][2] - (double)equation[1][0] * (double)equation[0][2]) / ((double)equation[0][0] * (double)equation[1][1] - (double)equation[1][0] * (double)equation[0][1]);
 
 
-	if (a[0][0] == 0 && a[0][1] == 0)
-	{
-		printf("error\n");
-		return 0;
-	}
 
-	if (a[1][0] == 0 && a[1][1] == 0)
-	{
-		printf("error\n");
-		return 0;
-	}
+	printf("\n입력한 방정식의 해는 x = %.2f", xres);
+	printf("\n입력한 방정식의 해는 x = %.2f", yres);
 
-	xres = (a[0][2] * a[1][1] - a[1][2] * a[0][1]) / (a[0][0] * a[1][1] - a[1][0] * a[0][1]);
-	yres = (a[0][0] * a[1][2] - a[1][0] * a[0][2]) / (a[0][0] * a[1][1] - a[1][0] * a[0][1]);
-	
-	printf("%lfx + %lfy = %lf\n", a[0][0], a[0][1], a[0][2]);
-	printf("%lfx + %lfy = %lf\n", a[1][0], a[1][1], a[1][2]);
-	printf("연립방정식의 해는 X = %lf Y = %lf", xres, yres);
+	return;
 
-	return 0;
 }
