@@ -1,7 +1,5 @@
 ﻿  소스.cpp
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(13,10): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(13,10): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(13,10): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%s'에 필요합니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(13,10): message : 이 인수는 버퍼 크기로 사용됩니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(21,3): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(22,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(24,3): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\소스.cpp(31,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Prob_2.vcxproj -> C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\8th-week\Prob_2\x64\Debug\Prob_2.exe
