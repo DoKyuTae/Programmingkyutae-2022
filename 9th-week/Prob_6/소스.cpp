@@ -1,19 +1,20 @@
 #include <stdio.h>
 
+#define DIR_NUM 4
+
 typedef enum { CYAN, MAGENTA, YELLOW = 5, BLACK } COLOR;
 typedef enum { UP, DOWN, LEFT, RIGHT } ARROW;
 
 int main(void)
 {
-	char c;
-	char direction;
-	COLOR my_color = YELLOW, c;
-	ARROW direction = UP;
+	COLOR my_color = YELLOW;
+	int c;
+	int direction = UP;
 
 	for (c = CYAN; c <= BLACK; c++)
 	{
 		direction ++;
-		direction = direction % 4;
+		direction = direction % DIR_NUM;
 		if (c == my_color) break;
 	}
 

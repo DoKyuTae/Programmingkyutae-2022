@@ -1,5 +1,2 @@
 ﻿  소스.cpp
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\9th-week\Prob_6\소스.cpp(10,27): error C2371: 'c': 재정의. 기본 형식이 다릅니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\9th-week\Prob_6\소스.cpp(8): message : 'c' 선언을 참조하십시오.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\9th-week\Prob_6\소스.cpp(11,8): error C2371: 'direction': 재정의. 기본 형식이 다릅니다.
-C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\9th-week\Prob_6\소스.cpp(9): message : 'direction' 선언을 참조하십시오.
+  Prob_6.vcxproj -> C:\Users\USER\Documents\GitHub\Programmingkyutae-2022\9th-week\Prob_6\x64\Debug\Prob_6.exe
