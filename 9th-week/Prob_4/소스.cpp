@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+#define MAX_STR 20
+#define AGE 22
+#define HEIGHT 187.5
+
 struct marriage
 {
-	char name[20];
+	char name[MAX_STR];
 	int age;
 	char sex;
 	double height;
@@ -10,7 +14,7 @@ struct marriage
 
 int main(void)
 {
-	struct marriage m1 = { "Andy", 22, 'm', 187.5 };
+	struct marriage m1 = { "Andy", AGE, 'm', HEIGHT};
 	
 	struct marriage *mp = &m1;
 
