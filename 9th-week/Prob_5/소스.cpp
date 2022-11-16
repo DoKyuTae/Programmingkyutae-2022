@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX_SEAT 5
+
 typedef struct train Train;
 
 struct train
@@ -15,7 +17,7 @@ int main(void)
 	Train *tail = NULL;
 	int i;
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < MAX_SEAT; i++)
 	{
 		if (head == NULL)
 		{
@@ -28,6 +30,8 @@ int main(void)
 			tail->next = tail;
 		}
 	}
+
+	printf("%d", sizeof(Train));
 
 	return 0;
 }
