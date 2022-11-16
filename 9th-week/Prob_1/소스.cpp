@@ -4,49 +4,60 @@
 int main(void)
 {
 	int *pi;
-	int size = 5;
-	int count = 0;
 	int num;
-
-	int a;
-	int i, j;
-	int p = 0;
-
-	pi = (int *)calloc(size, sizeof(int));
+	int i, j = 0;
 
 	printf("input a positive number : ");
-	scanf_s("%d", &a);
+	scanf_s("%d", &num);
+
+	pi = (int*)malloc((num - 1) * sizeof(int));
+	
+	for (i = 0; i < num - 1; i++)
+	{
+		pi[i] = i + 2;
+	}
+	
+	i = 0;
 
 	while (1)
 	{
-		if (a <= 0) break;
-		if (count == size)
+		while ((pi[i] == 0) && (i < num - 2))
 		{
-			size += 5;
-			pi = (int *)realloc(pi, size * sizeof(int));
+			i++;
 		}
 
-	}
-	
-
-	for (i = 2; i <= a; i++)
-	{
-		for (j = 2; j <= i; j++)
-		{
-			if (i % j == 0)
+		if (i == num - 2) break;
+		
+			for (j = i + 1; j < num -1; j++)
 			{
-				if (i > j) break;
-
-				else
+				if (pi[j] % pi[i] == 0)
 				{
-					printf(" %d ", i);
-					p++;
-					if (p % 5 == 0)
-						printf("\n");
+					pi[j] = 0;
 				}
 			}
+
+			i++;
+	}
+	
+	for (i = 0; i < num - 2; i++)
+	{
+		if (pi[i] != 0)
+		{
+			printf("%5d", pi[i]);
+		}
+		
+		else
+		{
+			printf("%5c", 'X');
+		}
+
+		if ((i + 1) % 5 == 0)
+		{
+			printf("\n");
 		}
 	}
+	
+	free(pi);
 
 	return 0;
 }
