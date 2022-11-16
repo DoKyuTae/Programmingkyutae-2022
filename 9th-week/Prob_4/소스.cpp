@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 #define MAX_STR 20
+#define NAME "Andy"
 #define AGE 22
+#define SEX 'm'
 #define HEIGHT 187.5
 
 struct marriage
@@ -14,7 +16,7 @@ struct marriage
 
 int main(void)
 {
-	struct marriage m1 = { "Andy", AGE, 'm', HEIGHT};
+	struct marriage m1 = { NAME, AGE, SEX, HEIGHT};
 	
 	struct marriage *mp = &m1;
 
