@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct inform
+struct inform                                                        // 구조체 설정
 {
 	int price;
 	int calorie;
