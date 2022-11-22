@@ -1,47 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define NUM_ZERO 0
+#define NUM_FIR 1
+#define NUM_SEC 2
+#define NUM_STR 5
+
 int main(void)
 {
 	int *pi;
 	int num;
-	int i, j = 0;
+	int i, j = NUM_ZERO;
 
 	printf("input a positive number : ");
 	scanf_s("%d", &num);
 
-	pi = (int*)malloc((num - 1) * sizeof(int));
+	pi = (int*)malloc((num - NUM_FIR) * sizeof(int));
 	
-	for (i = 0; i < num - 1; i++)
+	for (i = NUM_ZERO; i < num - NUM_FIR; i++)
 	{
-		pi[i] = i + 2;
+		pi[i] = i + NUM_SEC;
 	}
 	
-	i = 0;
+	i = NUM_ZERO;
 
-	while (1)
+	while (NUM_FIR)
 	{
-		while ((pi[i] == 0) && (i < num - 2))
+		while ((pi[i] == NUM_ZERO) && (i < num - NUM_SEC))
 		{
 			i++;
 		}
 
-		if (i == num - 2) break;
+		if (i == num - NUM_SEC) break;
 		
-			for (j = i + 1; j < num -1; j++)
+			for (j = i + NUM_FIR; j < num - NUM_FIR; j++)
 			{
-				if (pi[j] % pi[i] == 0)
+				if (pi[j] % pi[i] == NUM_ZERO)
 				{
-					pi[j] = 0;
+					pi[j] = NUM_ZERO;
 				}
 			}
 
 			i++;
 	}
 	
-	for (i = 0; i < num - 2; i++)
+	for (i = NUM_ZERO; i < num - NUM_SEC; i++)
 	{
-		if (pi[i] != 0)
+		if (pi[i] != NUM_ZERO)
 		{
 			printf("%5d", pi[i]);
 		}
@@ -51,7 +56,7 @@ int main(void)
 			printf("%5c", 'X');
 		}
 
-		if ((i + 1) % 5 == 0)
+		if ((i + NUM_FIR) % NUM_STR == NUM_ZERO)
 		{
 			printf("\n");
 		}
