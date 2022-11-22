@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_SEAT 5
+#define MAX_SEAT 5                                                   // 최대 좌석 수
 
 typedef struct train Train;
 
-struct train
+struct train                                                         // 구조체 설정
 {
-	int seat;
-	Train *next;
+	int seat;                                                        // 객차의 좌석 수
+	Train *next;                                                     // 다음 객차를 연결할 포인터
 };
 
-int main(void)
+int main(void)                            
 {
 	Train *head = NULL;
 	Train *tail = NULL;
@@ -31,7 +31,7 @@ int main(void)
 		}
 	}
 
-	printf("%d", sizeof(Train));
+	printf("seats : %d", sizeof(Train));                                     // 좌석수 출력
 
 	return 0;
 }
